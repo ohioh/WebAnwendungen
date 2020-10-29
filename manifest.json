@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0",
+  "comment": "Above version must be the same as data-pwa-version,  data-pwa-version can be found in index.html in the manifest tag",
+  "name": "Homepage about Tjark Ziehm",
+  "description": "A Page about me",
+  "short_name": "Tjark Ziehm",
+  "lang": "de",
+  "scope": ".",
+  "start_url": "/index.xhtml",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#B3B5B2",
+  "theme_color": "#92d050",
+  "generated": "true",
+  "gcm_sender_id": "YOUR_SENDER_ID",
+  "icons": [{
+      "src": "assets/icons/favicon-64x64.ico",
+      "sizes": "64x64",
+      "type": "image/ico",
+      "purpose": "any maskable"
+    }]
+}
