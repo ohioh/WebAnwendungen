@@ -2062,7 +2062,7 @@ $(function () {
       };
 
       function loadPWA() {}
-      loadJS('js/pwa.js', loadPWA, document.body);
+      loadJS('../js/pwa.js', loadPWA, document.body);
   }
 });
 

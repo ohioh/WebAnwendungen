@@ -1,18 +1,39 @@
-/*
-Copyright 2018 Google Inc.
+/*******************************************************
+*
+Theme Name:    structural CSS properties  ( class & tag )
+Theme URI:     /style/main.css
+Description:   Property settings of structure, section-alphabetic ordered
+Version:       1.0
+Date:          01.11.2020
+Author:        Tjark Ziehmm
+License:       MIT
+Tags:          body, header, p, ol, ul, hX, a, li, section, article, footer
+Class:         img-container,  navbar, padded, backlink,vertical-list, list-title, profil-icon
+               column, list-item, footer-link
+IDs:           no Id  (only in seperate file)
+*
+*******************************************************/
+/** *************************************** Tags *************************************** **/
+a {
+  font-weight: 400;
+  color: #4CAF50;
+  text-decoration: underline;
+}
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+article {
+  align-items: normal;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 0 5% 0 5%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
 
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-*/
 body {
   align-items: center;
   display: flex;
@@ -25,6 +46,10 @@ body {
   text-align: center;
 }
 
+ol {}
+
+ul {}
+
 h1 {
   color: #444;
   font-size: 6vw;
@@ -33,20 +58,15 @@ h1 {
 
 h2 {
   border-bottom: 1px solid #ddd;
-  color: #da0343;
+  color: #88626e;
   font-size: 5vw;
   margin: 25px;
   padding: 0 0 5px 0;
 }
 
-.img-container {
-  margin: 0 5vw;
-}
-
 img {
   max-width: 100%;
 }
-
 
 p {
   color: #444;
@@ -56,9 +76,6 @@ p {
   text-align: center;
 }
 
-a {
-  color: #da0343;
-}
 
 ul {
   list-style: none;
@@ -97,19 +114,6 @@ section {
   margin: 0 0 15px 0;
 }
 
-article {
-  align-items: normal;
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  flex-wrap: wrap;
-  padding: 0 5% 0 5%;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-}
 
 footer {
   background-color: #ccc;
@@ -120,14 +124,7 @@ footer {
   width: 100%;
 }
 
-a {
-  font-weight: 400;
-  color: #4CAF50;
-  text-decoration: underline;
-}
-
-
-
+/** *************************************** Classes *************************************** **/
 
 .padded {
   padding: 0 10%;

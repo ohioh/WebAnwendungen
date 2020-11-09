@@ -1,3 +1,21 @@
+/*******************************************************
+*
+Theme Name:    graphical CSS properties (  class & tag )
+Theme URI:     /style/main.css
+Description:   Property settings of design,color and size  (text &  graphic),section-alphabetic ordered
+Version:       1.0
+Date:          01.11.2020
+Author:        Tjark Ziehmm
+License:       MIT
+Tags:          body, header, p, ol, ul, hX, a, li, section, article, footer
+Classes:       img-container,  navbar, padded, backlink,vertical-list, list-title, profil-icon
+               column, list-item, footer-link
+IDs:           no Id  (only in seperate file)
+*
+*******************************************************/
+/** *************************************** Tags *************************************** **/
+
+
 /* conditional usage for different display modes */
 /* @media all and (display-mode: standalone) {
   body {
@@ -13,6 +31,31 @@ body {
     color: #6c6c6c !important;
     background-color: #f0f0f0
 }
+ol {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+  }
+
+  ol.a {list-style-type: armenia;}
+  ol.b {list-style-type: georgian;}
+
+
+  ul {
+    display: grid;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 6;
+    margin-right: 6;
+    padding-left: 100px;
+  }
+
+  ul.a {list-style-type: upper-roman;}
+  ul.b {list-style-type: lower-latin;}
+
 
 h1,
 h2,
@@ -67,10 +110,8 @@ p {
     padding-bottom: 0px
 }
 
-#page {
-    position: relative;
-    overflow-x: hidden !important
-}
+/** *************************************** Classes *************************************** **/
+
 
 .page-content {
     overflow-x: hidden !important;

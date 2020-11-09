@@ -2,15 +2,15 @@
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function () {
       //then register  ServiceWorker
-      navigator.serviceWorker.register('./sw.js', {
+      navigator.serviceWorker.register('../sw.js', {
           scope: ''
       }).then(function (reg) {
           console.log("[Page] ServiceWorker is registered @  (Scope: {reg.scope})");
           //navigator.serviceWorker.register('/swbluetooth.js');
           console.log("[Page] Tracing-Sensor-Worker is  registered");
           })
-      }).catch(err => {
-          console.log("[Page] ServiceWorker Error",err.scope);
+      }).catch(function (error) {
+          console.log("[Page] ServiceWorker Error",error.scope);
       })
     }
 
