@@ -1,0 +1,388 @@
+<!-- /*******************************************************
+*
+Theme Name:    entrypoint
+Theme URI:     index.htmml
+Description:   Mainpage of the homepage
+Version:       1.0
+Date:          01.11.2020
+Author:        Tjark Ziehmm
+License:       MIT
+Scripts:       manifest,  jquerry, feather-icons,main
+Classes:
+Tags:         body, div, ul, ol, li, h1, table, theader,tbody,tfooter, p
+ID:
+*
+*******************************************************/  -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <title>Style Guide</title>
+  <meta name="author" content="Tjark Ziehm, Student FH Kiel, Mtr: 936030"/>
+  <meta name="description" content="Aufgabe_Labor" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+  <meta name="apple-mobile-web-app-title" content="Tjark Ziehm"/>
+  <meta name="theme-color" content="#92d050"/>
+  <meta name="msapplication-tap-highlight" content="no"/>
+  <meta name="msapplication-TileImage" content="../assets/icons/favicon-64x64.ico"/>
+  <meta name="msapplication-TileColor" content="#92d050"/>
+  <link rel="shortcut icon" type="image/x-icon" sizes="32x32" href="../assets/icons/favicon-32x32.ico"/>
+  <link rel="shortcut icon" type="image/x-icon" sizes="16x16" href="../assets/icons/favicon-16x16.ico"/>
+  <link rel="shortcut icon" type="image/x-icon" sizes="64x64" href="../assets/icons/favicon-64x64.ico"/>
+  <link rel="stylesheet" type="text/css" href="../style/style.css"/>
+  <link rel="stylesheet" type="text/css" href="../style/main.css"/>
+  <link rel="stylesheet" type="text/css" href="../style/id.css"/>
+  <link rel="manifest" href="../manifest.json" data-pwa-version="1.0.0"></link>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body  class="theme-light">
+<hr>
+<p>Theme Name:    general Styleguide</p>
+<p>Theme URI:     StyleGuide.md</p>
+<p>Description:   Description for  Paradigms and Coding</p>
+<p>Version:       1.0</p>
+<p>Date:          01.11.2020</p>
+<p>Author:        Tjark Ziehm</p>
+<p>License:       MIT</p>
+<hr>
+<p>Source: copyright google  <em><a href="https://github.com/google/styleguide">GoogleStyleGuide</a></em></p>
+<h1 id="index-">Index:</h1>
+<ol>
+<li>Paradigm</li>
+<li>Html</li>
+<li>VersionControll</li>
+</ol>
+<h2 id="todos-">TODOs:</h2>
+<p><a href="paradigm">TODO</a>: MarkDown <a href="https://www.markdownguide.org/">More</a></p>
+<h1 id="1-paradigm">1.Paradigm</h1>
+<h2 id="1-1-functional-programming-declarative-">1.1 Functional programming (declarative)</h2>
+<p>→ Main article: Functional Programming
+The task and the known premises are formulated here as a functional expression. The independent application of function substitution and evaluation by the interpreter or compiler then solves the task. The program can be understood as a mapping of the input to the output.</p>
+<p><a href="https://de.wikipedia.org/wiki/Programmierparadigma">Source</a></p>
+<p><a href="https://www.ionos.de/digitalguide/websites/web-entwicklung/funktionale-programmierung/">More</a></p>
+<h2 id="1-2-object-oriented-programming-paradigms-imperative-">1.2 Object-oriented programming paradigms (imperative)</h2>
+<p>→ Main article: Object Orientation
+Classes are instantiatable modules and basic elements in object-oriented programming. According to the object-oriented programming paradigm, objects with data and the routines working on them are combined into units. In contrast, the procedural paradigm keeps the data separate from the routines processing the objects. A computer program is realized as a set of interacting objects.</p>
+<p>Object-oriented programming can be combined well with event-oriented programming, e.g., in the programming of interactive graphical user interfaces.</p>
+<p><a href="https://de.wikipedia.org/wiki/Programmierparadigma">Source</a></p>
+<p><a href="https://bmu-verlag.de/objektorientierte-programmierung-oop/">More</a></p>
+<h2 id="refactoring-restructoring">Refactoring / Restructoring</h2>
+<ul>
+<li>Renaming of variables and methods.</li>
+<li>Encapsulating fields.</li>
+<li>Introduction of a new abstract superclass.</li>
+<li>Removing and rearranging parameters.</li>
+<li>Reformatting of program code.</li>
+<li>Extraction of methods, classes, packages and interfaces.</li>
+<li>Improvement of data encapsulation.</li>
+</ul>
+<p><a href="https://www.refactoring.com/">More</a></p>
+<h1 id="2-html-">2.HTML:</h1>
+<h2 id="2-1-general-style-rules">2.1 General Style Rules</h2>
+<h3 id="2-1-1-protocol">2.1.1 Protocol</h3>
+<ul>
+<li><p>Recommended
+<code>@import &#39;<a href="https://fonts.googleapis.com/css?family=Open+Sans">https://fonts.googleapis.com/css?family=Open+Sans</a>&#39;;</code></p>
+</li>
+<li><p>Recommended
+<code><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script></code></p>
+</li>
+</ul>
+<h1 id="2-2-general-formatting-rules">2.2 General Formatting Rules</h1>
+<h3 id="2-2-1-indentation">2.2.1 Indentation</h3>
+<p>Indent by 2 spaces at a time.</p>
+<p><code>.example {
+  color: blue;
+}</code></p>
+<h3 id="2-2-2-capitalization">2.2.2 Capitalization</h3>
+<p>Use only lowercase.All code has to be lowercase: This applies to HTML element names, attributes, attribute values (unless text/CDATA), CSS selectors, properties, and property values (with the exception of strings).</p>
+<ul>
+<li>Recommended
+<code><img src="google.png" alt="Google"></code></li>
+</ul>
+<h3 id="2-2-3-trailing-whitespace">2.2.3 Trailing Whitespace</h3>
+<p>Remove trailing white spaces.</p>
+<p>Trailing white spaces are unnecessary and can complicate diffs.</p>
+<h3 id="2-3-1-encoding">2.3.1 Encoding</h3>
+<p>Use UTF-8 (no BOM).</p>
+<p>Make sure your editor uses UTF-8 as character encoding, without a byte order mark.</p>
+<h3 id="2-3-2-comments">2.3.2 Comments</h3>
+<p>Explain code as needed, where possible.</p>
+<p>Use comments to explain code: What does it cover, what purpose does it serve, why is respective solution used or preferred?</p>
+<h3 id="2-3-3-action-items">2.3.3 Action Items</h3>
+<p>Mark todos and action items with TODO.</p>
+<p>Highlight todos by using the keyword TODO only, not other common formats like @@.</p>
+<p>Append a contact (username or mailing list) in parentheses as with the format TODO(contact).</p>
+<p>Append action items after a colon as in TODO: action item.</p>
+<p>{# TODO(john.doe): revisit centering #}</p>
+<p><center>Test</center>
+<!-- TODO: remove optional tags --></p>
+<ul>
+  <li>Apples</li>
+  <li>Oranges</li>
+</ul>
+
+<h1 id="3-html">3 HTML</h1>
+<h2 id="3-1-html-style-rules">3.1 HTML Style Rules</h2>
+<h3 id="3-1-1-document-type">3.1.1 Document Type</h3>
+<p>Use the Document type of the code.
+Make sure only  using the right version of the code.
+If needed code is newer then the code has to get a new main  Version. Comment the obsolete Version as  deprecated.</p>
+<h3 id="3-1-2-validity">3.1.2 Validity</h3>
+<p>Use valid Code where possible.</p>
+<h3 id="3-1-3-semantics">3.1.3 Semantics</h3>
+<p>Use Code according to its purpose.
+Use elements (sometimes incorrectly called “tags”) for what they have been created for. For example, use heading elements for headings, p elements for paragraphs, a elements for anchors, etc.</p>
+<p>Using HTML according to its purpose is important for accessibility, reuse, and code efficiency reasons.</p>
+<h3 id="3-1-4-multimedia-fallback">3.1.4 Multimedia Fallback</h3>
+<p>Provide alternative contents for multimedia.
+For multimedia, such as images, videos, animated objects via canvas, make sure to offer alternative access. For images that means use of meaningful alternative text (alt) and for video and audio transcripts and captions, if available.</p>
+<p>Providing alternative contents is important for accessibility reasons: A blind user has few cues to tell what an image is about without @alt, and other users may have no way of understanding what video or audio contents are about either.</p>
+<p>(For images whose alt attributes would introduce redundancy, and for images whose purpose is purely decorative which you cannot immediately use CSS for, use no alternative text, as in alt=&quot;&quot;.)</p>
+<h3 id="3-1-5-separation-of-concerns">3.1.5 Separation of Concerns</h3>
+<h4 id="devide-and-concer-">Devide and Concer:</h4>
+<ol>
+<li>Divide: Break the given problem into subproblems of same type.</li>
+<li>Conquer: Recursively solve these subproblems</li>
+<li>Combine: Appropriately combine the answers</li>
+</ol>
+<h4 id="refactoring-todo-">Refactoring: <a href="paradigm">TODO</a></h4>
+<p>Mikro-Refactorings:</p>
+<ul>
+<li>Program dependence graph</li>
+<li>Software intelligence</li>
+<li>Encapsulate Field</li>
+<li>Type generalization</li>
+<li>Polymorphismus</li>
+<li>extract &amp; seperate classes</li>
+<li>extract &amp; seperate methods</li>
+</ul>
+<h3 id="3-1-6-entity-references">3.1.6 Entity References</h3>
+<p>Do not use entity references.
+<!-- Not recommended -->
+The currency symbol for the Euro is &ldquo;&eur;&rdquo;.
+<!-- Recommended -->
+The currency symbol for the Euro is “€”.</p>
+<h3 id="attributes">Attributes</h3>
+<p>Omit type attributes for style sheets and scripts.(  if language allowed)</p>
+<h2 id="3-2-formatting-rules">3.2 Formatting Rules</h2>
+<h3 id="3-2-1-general-formatting">3.2.1 General Formatting</h3>
+<p>Use a new line for every block, list, or table element, and indent every such child element.</p>
+<p>Independent of the styling of an element (as CSS allows elements to assume a different role per display property), put every block, list, or table element on a new line.</p>
+<p>Also, indent them if they are child elements of a block, list, or table element.</p>
+<p>(If you run into issues around whitespace between list items it’s acceptable to put all li elements in one line. A linter is encouraged to throw a warning instead of an error.)</p>
+<h3 id="3-2-2-line-wrapping">3.2.2 Line-Wrapping</h3>
+<p>While there is no column limit recommendation for HTML, you may consider wrapping long lines if it significantly improves readability.</p>
+<p>When line-wrapping, each continuation line should be indented at least 4 additional spaces from the original line.</p>
+<h3 id="3-2-3-html-quotation-marks">3.2.3 HTML Quotation Marks</h3>
+<p>When quoting attributes values, use double quotation marks.</p>
+<p>Use double (&quot;&quot;) rather than single quotation marks (&#39;&#39;) around attribute values.</p>
+<h2 id="4-css">4 CSS</h2>
+<h2 id="4-1-css-style-rules">4.1 CSS Style Rules</h2>
+<h3 id="4-1-1-css-validity">4.1.1 CSS Validity</h3>
+<p>Use valid CSS where possible.</p>
+<p>Unless dealing with CSS validator bugs or requiring proprietary syntax, use valid CSS code.</p>
+<p>Use tools such as the W3C CSS validator to test.</p>
+<p>Using valid CSS is a measurable baseline quality attribute that allows to spot CSS code that may not have any effect and can be removed, and that ensures proper CSS usage.</p>
+<h3 id="4-1-2-id-and-class-naming">4.1.2 ID and Class Naming</h3>
+<p>Use meaningful or generic ID and class names.</p>
+<p>Instead of presentational or cryptic names, always use ID and class names that reflect the purpose of the element in question, or that are otherwise generic.</p>
+<p>Names that are specific and reflect the purpose of the element should be preferred as these are most understandable and the least likely to change.</p>
+<p>Generic names are simply a fallback for elements that have no particular or no meaning different from their siblings. They are typically needed as “helpers.”</p>
+<p>Using functional or generic names reduces the probability of unnecessary document or template changes.</p>
+<h3 id="4-1-3-id-and-class-name-style">4.1.3 ID and Class Name Style</h3>
+<p>Use ID and class names that are as short as possible but as long as necessary.</p>
+<p>Try to convey what an ID or class is about while being as brief as possible.</p>
+<p>Using ID and class names this way contributes to acceptable levels of understandability and code efficiency.</p>
+<p>/<em> Not recommended </em>/</p>
+<p>#navigation {}
+.atr {}
+/<em> Recommended </em>/</p>
+<p>#nav {}
+.author {}</p>
+<h3 id="4-1-4-type-selectors">4.1.4 Type Selectors</h3>
+<p>Avoid qualifying ID and class names with type selectors.</p>
+<p>Unless necessary (for example with helper classes), do not use element names in conjunction with IDs or classes.</p>
+<p>Avoiding unnecessary ancestor selectors is useful for performance reasons.</p>
+<p>/<em> Not recommended </em>/
+ul#example {}
+div.error {}
+/<em> Recommended </em>/</p>
+<p>#example {}
+.error {}</p>
+<h3 id="4-1-5-shorthand-properties">4.1.5 Shorthand Properties</h3>
+<p>Use shorthand properties where possible.</p>
+<p>CSS offers a variety of shorthand properties (like font) that should be used whenever possible, even in cases where only one value is explicitly set.</p>
+<p>Using shorthand properties is useful for code efficiency and understandability.</p>
+<p>/<em> Not recommended </em>/
+border-top-style: none;
+font-family: palatino, georgia, serif;
+font-size: 100%;
+line-height: 1.6;
+padding-bottom: 2em;
+padding-left: 1em;
+padding-right: 1em;
+padding-top: 0;
+/<em> Recommended </em>/
+border-top: 0;
+font: 100%/1.6 palatino, georgia, serif;
+padding: 0 1em 2em;</p>
+<h3 id="4-1-6-0-and-units">4.1.6 0 and Units</h3>
+<p>Omit unit specification after “0” values, unless required.</p>
+<p>Do not use units after 0 values unless they are required.</p>
+<p>flex: 0px; /<em> This flex-basis component requires a unit. </em>/
+flex: 1 1 0px; /<em> Not ambiguous without the unit, but needed in IE11. </em>/
+margin: 0;
+padding: 0;</p>
+<h3 id="4-1-7-leading-0s">4.1.7 Leading 0s</h3>
+<p>Omit leading “0”s in values.</p>
+<p>Do not put 0s in front of values or lengths between -1 and 1.</p>
+<p>font-size: .8em;</p>
+<h3 id="4-1-8-hexadecimal-notation">4.1.8 Hexadecimal Notation</h3>
+<p>Use 3 character hexadecimal notation where possible.</p>
+<p>For color values that permit it, 3 character hexadecimal notation is shorter and more succinct.</p>
+<p>/<em> Not recommended </em>/
+color: #eebbcc;
+/<em> Recommended </em>/
+color: #ebc;</p>
+<h3 id="4-1-9-prefixes">4.1.9 Prefixes</h3>
+<p>Prefix selectors with an application-specific prefix (optional).</p>
+<p>In large projects as well as for code that gets embedded in other projects or on external sites use prefixes (as namespaces) for ID and class names. Use short, unique identifiers followed by a dash.</p>
+<p>Using namespaces helps preventing naming conflicts and can make maintenance easier, for example in search and replace operations.</p>
+<p>.adw-help {} /<em> AdWords </em>/</p>
+<p>#maia-note {} /<em> Maia </em>/</p>
+<h3 id="separate-words-in-id-and-class-names-by-a-hyphen-">Separate words in ID and class names by a hyphen.</h3>
+<p>Do not concatenate words and abbreviations in selectors by any characters (including none at all) other than hyphens, in order to improve understanding and scannability.</p>
+<p>/<em> Not recommended: does not separate the words “demo” and “image” </em>/
+.demoimage {}</p>
+<p>/<em> Not recommended: uses underscore instead of hyphen </em>/
+.error_status {}
+/<em> Recommended </em>/</p>
+<p>#video-id {}
+.ads-sample {}</p>
+<h2 id="4-2-css-formatting-rules">4.2 CSS Formatting Rules</h2>
+<h3 id="4-2-1-declaration-order">4.2.1 Declaration Order</h3>
+<p>Alphabetize declarations.</p>
+<p>Put declarations in alphabetical order in order to achieve consistent code in a way that is easy to remember and maintain.</p>
+<p>Ignore vendor-specific prefixes for sorting purposes. However, multiple vendor-specific prefixes for a certain CSS property should be kept sorted (e.g. -moz prefix comes before -webkit).</p>
+<p>background: fuchsia;
+border: 1px solid;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+color: black;
+text-align: center;
+text-indent: 2em;</p>
+<h3 id="4-2-2-block-content-indentation">4.2.2 Block Content Indentation</h3>
+<p>Indent all block content.</p>
+<p>Indent all block content, that is rules within rules as well as declarations, so to reflect hierarchy and improve understanding.</p>
+<p>@media screen, projection {</p>
+<p>  html {
+    background: #fff;
+    color: #444;
+  }</p>
+<p>}</p>
+<h3 id="4-2-3-declaration-stops">4.2.3 Declaration Stops</h3>
+<p>Use a semicolon after every declaration.</p>
+<p>End every declaration with a semicolon for consistency and extensibility reasons.</p>
+<h3 id="4-2-4-property-name-stops">4.2.4 Property Name Stops</h3>
+<p>Use a space after a property name’s colon.</p>
+<p>Always use a single space between property and value (but no space between property and colon) for consistency reasons.</p>
+<p>/<em> Not recommended </em>/
+h3 {
+  font-weight:bold;
+}
+/<em> Recommended </em>/
+h3 {
+  font-weight: bold;
+}</p>
+<h3 id="4-2-5-declaration-block-separation">4.2.5 Declaration Block Separation</h3>
+<p>Use a space between the last selector and the declaration block.</p>
+<p>Always use a single space between the last selector and the opening brace that begins the declaration block.</p>
+<p>The opening brace should be on the same line as the last selector in a given rule.</p>
+<p>/<em> Not recommended: missing space </em>/</p>
+<p>#video{
+  margin-top: 1em;
+}</p>
+<p>/<em> Not recommended: unnecessary line break </em>/</p>
+<p>#video
+{
+  margin-top: 1em;
+}
+/<em> Recommended </em>/</p>
+<p>#video {
+  margin-top: 1em;
+}</p>
+<h3 id="4-2-6-selector-and-declaration-separation">4.2.6 Selector and Declaration Separation</h3>
+<p>Separate selectors and declarations by new lines.</p>
+<p>Always start a new line for each selector and declaration.</p>
+<p>/<em> Not recommended </em>/
+a:focus, a:active {
+  position: relative; top: 1px;
+}
+/<em> Recommended </em>/
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  line-height: 1.2;
+}</p>
+<h3 id="4-2-7-rule-separation">4.2.7 Rule Separation</h3>
+<p>Separate rules by new lines.</p>
+<p>Always put a blank line (two line breaks) between rules.</p>
+<p>html {
+  background: #fff;
+}</p>
+<p>body {
+  margin: auto;
+  width: 50%;
+}</p>
+<h3 id="4-2-8-css-quotation-marks">4.2.8 CSS Quotation Marks</h3>
+<p>Use single (&#39;&#39;) rather than double (&quot;&quot;) quotation marks for attribute selectors and property values.</p>
+<p>Do not use quotation marks in URI values (url()).</p>
+<p>Exception: If you do need to use the @charset rule, use double quotation marks—single quotation marks are not permitted.</p>
+<p>/<em> Not recommended </em>/
+@import url(&quot;<a href="https://www.google.com/css/maia.css">https://www.google.com/css/maia.css</a>&quot;);</p>
+<p>html {
+  font-family: &quot;open sans&quot;, arial, sans-serif;
+}
+/<em> Recommended </em>/
+@import url(<a href="https://www.google.com/css/maia.css">https://www.google.com/css/maia.css</a>);</p>
+<p>html {
+  font-family: &#39;open sans&#39;, arial, sans-serif;
+}</p>
+<h2 id="4-3-css-meta-rules">4.3 CSS Meta Rules</h2>
+<h3 id="4-3-1-section-comments">4.3.1 Section Comments</h3>
+<p>Group sections by a section comment (optional).</p>
+<p>If possible, group style sheet sections together by using comments. Separate sections with new lines.</p>
+<p>/<em> Header </em>/</p>
+<p>#adw-header {}</p>
+<p>/<em> Footer </em>/</p>
+<p>#adw-footer {}</p>
+<p>/<em> Gallery </em>/</p>
+<p>.adw-gallery {}</p>
+
+
+<div id="footer-bar" class="footer-bar1">
+  <a href="../pages/ajax.html"><i data-feather="heart" data-feather-line="1" data-feather-size="1" data-feather-color="blue1" data-feather-bf="blue2"></i><span>AJAX</span></a>
+  <a href="../pages/html5.html"><i data-feather="home" data-feather-line="1" data-feather-size="1" data-feather-color="blue1" data-feather-bf="blue2"></i><span>HTML5</span></a>
+  <a href="../pages/StyleGuide.html"><i data-feather="settings" data-feather-line="1" data-feather-size="1" data-feather-color="blue1" data-feather-bf="blue2"></i><span>StyleGuide</span></a>
+  <a href="../pages/xhtml.html"><i data-feather="settings" data-feather-line="1" data-feather-size="1" data-feather-color="blue1" data-feather-bf="blue2"></i><span>XHTML</span></a>
+</div>
+
+<script>
+  feather.replace()
+</script>
+
+<script type="text/javascript" src="/js/main.js"></script>
+
+</body>
+</html>

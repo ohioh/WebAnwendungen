@@ -34,11 +34,14 @@ ID:
   <link rel="shortcut icon" type="image/x-icon" sizes="16x16" href="../assets/icons/favicon-16x16.ico"/>
   <link rel="shortcut icon" type="image/x-icon" sizes="64x64" href="../assets/icons/favicon-64x64.ico"/>
   <link rel="stylesheet" type="text/css" href="../style/style.css"/>
+  <link rel="stylesheet" type="text/css" href="../style/main.css"/>
+  <link rel="stylesheet" type="text/css" href="../style/id.css"/>
   <meta name="msapplication-tap-highlight" content="no"/>
   <meta name="msapplication-TileImage" content="../assets/icons/favicon-64x64.ico"/>
   <meta name="msapplication-TileColor" content="#92d050"/>
   <link rel="manifest" href="../manifest.json" data-pwa-version="1.0.0"></link>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body  class="theme-light" data-highlight="MainPage">
@@ -55,16 +58,18 @@ ID:
     <div id="pagecontent">
       <p>comin'  soon ...</p>
     </div>
-
     <div id="footer-bar" class="footer-bar1">
       <a href="../pages/ajax.html"><i data-feather="heart" data-feather-line="1" data-feather-size="1" data-feather-color="blue1" data-feather-bf="blue2"></i><span>AJAX</span></a>
-      <a href="../index.html""><i data-feather="home" data-feather-line="1" data-feather-size="1" data-feather-color="blue1" data-feather-bf="blue2"></i><span>Index</span></a>
-      <a href="../pages/forms.html"><i data-feather="settings" data-feather-line="1" data-feather-size="1" data-feather-color="blue1" data-feather-bf="blue2"></i><span>Forms</span></a>
+      <a href="../pages/html5.html"><i data-feather="home" data-feather-line="1" data-feather-size="1" data-feather-color="blue1" data-feather-bf="blue2"></i><span>HTML5</span></a>
+      <a href="../pages/StyleGuide.html"><i data-feather="settings" data-feather-line="1" data-feather-size="1" data-feather-color="blue1" data-feather-bf="blue2"></i><span>StyleGuide</span></a>
       <a href="../pages/xhtml.html"><i data-feather="settings" data-feather-line="1" data-feather-size="1" data-feather-color="blue1" data-feather-bf="blue2"></i><span>XHTML</span></a>
     </div>
-  </div>
 
-  <script type="text/javascript" src="../js/main.js"></script>
+    <script>
+      feather.replace();
+    </script>
+
+    <script type="text/javascript" src="/js/main.js"></script>
 
 </body>
 </html>
