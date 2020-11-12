@@ -13,157 +13,96 @@ Class:         img-container,  navbar, padded, backlink,vertical-list, list-titl
 IDs:           no Id  (only in seperate file)
 *
 *******************************************************/
+
+
 /** *************************************** Tags *************************************** **/
 a {
-  font-weight: 400;
-  color: #4CAF50;
-  text-decoration: underline;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-article {
-  align-items: normal;
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  flex-wrap: wrap;
-  padding: 0 5% 0 5%;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-}
-
 body {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-  justify-content: space-between;
-  margin: 0;
-  max-width: 100%;
-  min-height: 100vh;
-  text-align: center;
+  font-size: 1em;
 }
 
-ol {}
+div {
 
-ul {}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold ;
+}
 
 h1 {
-  color: #444;
-  font-size: 6vw;
-  font-weight: 500;
+  font-size: 1.8em;
 }
 
 h2 {
-  border-bottom: 1px solid #ddd;
-  color: #88626e;
-  font-size: 5vw;
-  margin: 25px;
-  padding: 0 0 5px 0;
+  font-size: 1.7em;
 }
 
-img {
-  max-width: 100%;
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.4em;
+}
+
+h6 {
+  font-size: 1.2em;
 }
 
 p {
-  color: #444;
-  font-size: 1em;
-  line-height: 1.6em;
-  margin: 0 5vw;
-  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-
-ul {
-  list-style: none;
-  padding: 0;
+img {
+  align: middle;
 }
 
-li {
-  padding: 5px;
-}
-
-header {
-  width: 100%;
-}
-
-ul.navbar {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #4CAF50;
-}
-
-ul.navbar>li>a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-}
-
-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  margin: 0 0 15px 0;
-}
-
-
-footer {
-  background-color: #ccc;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 15px 0;
-  text-align: center;
-  width: 100%;
+ul, ol {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: medium;
 }
 
 /** *************************************** Classes *************************************** **/
 
-.padded {
-  padding: 0 10%;
-}
-
-.back-link {
-  padding-bottom: 10%;
-}
-
-.vertical-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0;
-}
-
-.list-title {
-  margin: 10px 0;
-}
-
-.profile-icon {
-  float: right;
-  padding: 10px 16px
-}
-
-.column {
+.inner {
+  text-align: center;
   width: 100%;
+  height: 30px;
+  size: 100%;
+  margin: auto;
+  padding: auto;
+  position:fixed;
+  z-index:999;
+  opacity: 75%;
+  }
+
+.header-middle {
+  text-align: middle;
 }
 
-.img-container {
-  padding-top: 10px;
-}
 
-.list-item {
-  padding: 5px 0;
-}
-
-.footer-link {
-  color: white;
+/** *************************************** Media *************************************** **/
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
 }
 
 @media (min-width: 800px) {
@@ -179,4 +118,9 @@ footer {
     padding-left: 10px;
   }
 
+}
+
+@media print {
+  nav, footer { display: none; }
+  img { max-width: 12cm; }
 }

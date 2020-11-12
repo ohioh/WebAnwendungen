@@ -13,8 +13,16 @@ IDs:           page
 *
 *******************************************************/
 
+#header-picture {
+  padding: 20px;
+  margin-top: 8%;
+}
 
-#page {
-  position: relative;
-  overflow-x: hidden !important
+#profilbild {
+  align: left;
+  width: 60%;
+}
+
+#spalte1 {
+  align: middle;
 }
