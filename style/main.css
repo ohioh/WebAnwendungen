@@ -19,12 +19,9 @@ IDs:           no Id  (only in seperate file)
 a {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 body {
   font-size: 1em;
-}
-
-div {
-
 }
 
 h1,
@@ -65,7 +62,7 @@ p {
 }
 
 img {
-  align: middle;
+  text-align: middle;
 }
 
 ul, ol {
